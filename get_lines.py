@@ -14,7 +14,7 @@ for track in data['tracks']:
     track['song']['lyrics'] = track['song']['lyrics'].split("\n")[:-1]
     lyrics = []
     for lyric in track['song']['lyrics']:
-        if "nigga" in lyric.lower() or "[" in lyric.lower() or "]" in lyric.lower() or lyric == "":
+        if "[" in lyric.lower() or "]" in lyric.lower() or lyric == "":
             continue
         lyrics.append(lyric)
     track['song']['lyrics'] = lyrics
