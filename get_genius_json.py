@@ -5,7 +5,10 @@ from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
 
 # print(token_my.genius_token)
+
+########### IMPORTANT: use your Genius API token here ###########
 genius = Genius(token_my.genius_token)
+#################################################################
 
 # artist = genius.search_artist('Kanye West')
 # artist.save_lyrics()
